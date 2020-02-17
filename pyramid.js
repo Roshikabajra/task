@@ -1,0 +1,13 @@
+function pyramid(n) {
+  for (let i = 0; i <= n; i++) {
+    var str = "";
+    for (let j = 1; j < n - i; j++) {
+      str = str + " ";
+    }
+    for (let k = 1; k <= 2 * i + 1; k++) {
+      str = str + "*";
+    }
+    console.log(str);
+  }
+}
+pyramid(4);
